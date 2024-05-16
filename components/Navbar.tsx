@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import { RiShoppingBasketLine } from "react-icons/ri";
 const Navber = () => {
   const navContents = [
     { href: "/shop-all", label: "shop all" },
@@ -46,16 +46,26 @@ const Navber = () => {
           </ul>
         </div>
 
-        <ul className='lg:flex origin-top justify-center items-center max-lg:bg-white  duration-700  lg:gap-10  '>
+        <div className='lg:flex origin-top justify-center items-center max-lg:bg-white  duration-700  lg:gap-10  '>
           {navContents.slice(3, 5).map((item) => (
-            <li
+           <ul>
+             <li
               className='max-lg:py-5    flex justify-center items-center text-[0.9rem]  uppercase '
               key={item.label}
             >
               <Link href={item.href}>{item.label}</Link>
             </li>
-          ))}
-        </ul>
+           </ul>
+         
+        ))}
+        
+        <div className="relative">
+
+
+        <Link href='/cart'>< RiShoppingBasketLine className="text-3xl text-btn_bg absolute top-1/2 transform -translate-y-1/2" /></Link>
+        <span className="absolute w-5 h-5 rounded-full bg-btn_bg -top-6 left-5 text-center text-light font-semibold">15</span>
+        </div>
+        </div>
       </nav>
     </header>
   );

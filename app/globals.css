@@ -33,15 +33,15 @@ html {
 /* typography */
 
 span{
-  @apply text-sm font-semibold text-dark/70 capitalize
+  @apply text-[1.1rem] font-semibold text-dark/70 capitalize
 }
 
 h1{
   @apply text-6xl  max-md:text-4xl  font-extrabold
 }
 h2{
-  @apply text-[2.5rem]  max-md:text-[1.7rem] text-center font-extrabold
+  @apply text-[2.5rem]  max-md:text-[1.7rem] text-center font-bold
 }
 p{
-  @apply text-lg max-md:text-center font-medium
+  @apply text-[1rem] leading-7 max-md:text-center text-dark/70 font-[500]
 }

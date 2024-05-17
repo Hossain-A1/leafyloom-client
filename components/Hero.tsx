@@ -22,7 +22,7 @@ export default function Hero() {
             </div>
             <Link
               href='/'
-              className='uppercase py-3 block px-10 bg-btn_bg text-light'
+              className='uppercase py-3 block px-10 bg-btn_bg text-light  hover:bg-btn_bg/85 eq'
             >
               {" "}
               Add to Cart
@@ -30,7 +30,7 @@ export default function Hero() {
           </div>
         </div>
         <div className='relative h-full lg:w-[50vw] w-full '>
-          <figure className='absolute max-sm:h-72 max-sm:w-52 z-30 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:top-[50vh] max-sm:top-52 sm:h-[30rem] sm:w-[30rem] md:top-5 md:h-80 md:w-80 lg:h-[30rem] lg:w-[30rem] lg:top-60 xl:top-1/2'>
+          <figure className='absolute max-sm:h-72 max-sm:w-52 z-30 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:top-[50vh] max-sm:top-52 sm:h-[30rem] sm:w-[30rem] md:top-5 md:h-80 md:w-80 lg:h-[30rem] lg:w-[25rem] lg:top-60 xl:top-1/2'>
             <Image
               src='/images/plant_hero.png'
               alt='hero image'
@@ -40,10 +40,10 @@ export default function Hero() {
               className='h-full w-full object-fill'
             />
           </figure>
-          <div className='absolute max-sm:top-32 left-1/2 -translate-x-[48%] z-10 max-sm:h-40 max-sm:w-40 rounded-full bg-gradient-to-tr from-light to bg-green sm:h-80 sm:w-80 sm:top-[30vh] sm:left-[55%] md:h-52 md:w-52  md:-top-20 lg:w-[16rem] lg:h-[16rem] lg:top-28 xl:top-1/2 xl:-translate-y-1/2'></div>
+          <div className='absolute max-sm:top-32 left-1/2 -translate-x-[48%] z-10 max-sm:h-40 max-sm:w-40 rounded-full bg-gradient-to-tr from-light to bg-green sm:h-80 sm:w-80 sm:top-[30vh] sm:left-[55%] md:h-52 md:w-52  md:-top-20 lg:w-[18rem] lg:h-[18rem] lg:left-1/2 lg:top-28 xl:top-1/2 xl:-translate-y-1/2'></div>
           <div
             className='absolute  z-20 max-sm:left-1/2 max-sm:-translate-x-24  max-sm:top-52
-  max-sm:transform max-sm:h-24 max-sm:w-24 rounded-full bg-gradient-to-tr from-light to bg-btn_bg sm:h-48 sm:w-48 sm:top-[50vh] sm:left-40 md:h-28 md:w-28 md:top-5 md:left-16 lg:top-60 lg:left-20  lg:h-40 lg:w-40 xl:left-36 xl:top-1/2'
+  max-sm:transform max-sm:h-24 max-sm:w-24 rounded-full bg-gradient-to-tl from-light to bg-btn_bg sm:h-48 sm:w-48 sm:top-[50vh] sm:left-40 md:h-28 md:w-28 md:top-5 md:left-16 max-xl:top-80 lg:top-60 lg:left-16  lg:h-40 lg:w-40  xl:left-36 xl:top-[22rem] 2xl:left-36 2xl:top-[42rem]'
           ></div>
         </div>
       </div>

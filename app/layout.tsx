@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter, Roboto } from "next/font/google";
+import { Inter, Lora, Poppins, Roboto } from "next/font/google";
 import "./globals.css";
 import Navber from "@/components/Navbar";
 
-const inter = Roboto({ subsets: ["latin"] ,weight:['100','300','400','500','700','900']});
+const inter = Lora({ subsets: ["latin"] ,weight:['400','500','700']});
 
 export const metadata: Metadata = {
   title: "Create Next App",

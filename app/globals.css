@@ -37,11 +37,14 @@ span{
 }
 
 h1{
-  @apply text-6xl  max-md:text-4xl  font-extrabold
+  @apply text-[3.5rem]  max-md:text-4xl  font-extrabold
 }
 h2{
   @apply text-[2.5rem]  max-md:text-[1.7rem] text-center font-bold
 }
+h3{
+  @apply text-3xl max-lg:text-2xl text-center md:text-start leading-[3rem]  font-[700]
+}
 p{
-  @apply text-[1rem] leading-7 max-md:text-center text-dark/70 font-[500]
+  @apply text-[1rem] leading-7  text-dark/85 font-[500]
 }

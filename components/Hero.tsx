@@ -11,9 +11,8 @@ export default function Hero() {
           {/* Added text-center class */}
           <span>Plants</span>
           <h1>Bird of Paradise Plant</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-            provident laboriosam nostrum id quisquam ipsam, consequuntur ut
+          <p className="max-md:text-center">
+          The Bird of Paradise plant is a striking tropical species with vibrant, bird-like flowers, perfect for adding an exotic touch to gardens and interiors.
           </p>
           <div className='flex  max-md:flex-col max-md:items-center  gap-5 mt-5 h-full w-full'>
             <div className='flex gap-2.5 items-center'>

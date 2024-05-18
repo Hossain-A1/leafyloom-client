@@ -1,8 +1,8 @@
 import Hero from "@/components/Hero";
 import SpecialOffer from "@/components/SpecialOffer";
 import ShopPage from "./shop/page";
-import OurStory from "@/components/OurStory";
 import OurStoryPage from "./our-story/page";
+import UserReview from "@/components/UserReview";
 
 export default function HomePage() {
   return (
@@ -11,6 +11,7 @@ export default function HomePage() {
       <SpecialOffer/>
       <ShopPage/>
       <OurStoryPage/>
+      <UserReview/>
     </main>
   )
 }

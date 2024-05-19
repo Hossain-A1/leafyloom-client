@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function OurStory() {
   return (
-    <section className='lg:py-20'>
+    <section className='lg:py-20 sp container'>
       <div className=' flex flex-col items-center gap-2.5'>
         <div className='lg:w-[50rem] w-full'>
           <SectionTitle

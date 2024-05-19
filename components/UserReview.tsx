@@ -9,7 +9,7 @@ const UserReview = () => {
           <span>Maria Oliver</span>
         </div>
         <div className='bg-hero_bg sp grid md:grid-cols-2 gap-10 max-md:gap-20 grid-cols-1'>
-          <div className="lg:pl-28 md:pl-10 lg:w-[28rem] flex flex-col items-center md:items-start justify-center gap-5 ">
+          <div className="lg:pl-28 2xl:pl-80 md:pl-10 lg:w-[30rem] 2xl:w-[50rem] flex flex-col  items-center md:items-start justify-center gap-5 ">
 
           <figure className='h-28 w-28 rounded-full overflow-hidden '>
               <Image
@@ -37,7 +37,7 @@ const UserReview = () => {
           </div>
 
           <div>
-            <figure className='lg:h-[55rem] md:h-[45rem] lg:w-[44rem] max-lg:h-[30rem] w-full'>
+            <figure className='lg:h-[55rem] md:h-[45rem] xl:w-[44rem] max-lg:h-[30rem] w-full'>
               <Image
                 src='https://images.pexels.com/photos/6640443/pexels-photo-6640443.jpeg?auto=compress&cs=tinysrgb&w=600'
                 alt='hero image'

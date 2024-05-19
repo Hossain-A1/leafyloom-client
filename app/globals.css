@@ -45,6 +45,9 @@ h2{
 h3{
   @apply text-3xl max-lg:text-2xl text-center md:text-start leading-[3rem]  font-[700]
 }
+h4{
+  @apply text-2xl text-center    font-[700]
+}
 p{
   @apply text-[1rem] leading-7  text-dark/85 font-[500]
 }

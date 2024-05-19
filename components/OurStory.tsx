@@ -34,7 +34,7 @@ export default function OurStory() {
       {/* catagoryes picture */}
 
       <div className='catagory-pictures flex items-center gap-5 mt-20  lg:mt-40 '>
-        <Link href='/shop' className="lg:h-[45rem] block w-1/2 relative overflow-hidden">
+        <Link href='/shop' className="lg:h-[45rem] block w-1/2 2xl:w-full 2xl:h-full  relative overflow-hidden">
           <Image
             src='https://images.pexels.com/photos/1201798/pexels-photo-1201798.jpeg?auto=compress&cs=tinysrgb&w=600'
             alt='hero image'
@@ -48,7 +48,7 @@ export default function OurStory() {
         <small className="text-dark/70">4 Products</small>
        </span>
         </Link>
-        <Link href='/shop'  className="lg:h-[45rem] block w-1/2 relative overflow-hidden">
+        <Link href='/shop'  className="lg:h-[45rem] block w-1/2 2xl:w-full 2xl:h-full relative overflow-hidden">
           <Image
             src='https://images.pexels.com/photos/6903989/pexels-photo-6903989.jpeg?auto=compress&cs=tinysrgb&w=600'
             alt='hero image'

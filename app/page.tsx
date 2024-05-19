@@ -3,6 +3,7 @@ import SpecialOffer from "@/components/SpecialOffer";
 import ShopPage from "./shop/page";
 import OurStoryPage from "./our-story/page";
 import UserReview from "@/components/UserReview";
+import Services from "@/components/Services";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <ShopPage/>
       <OurStoryPage/>
       <UserReview/>
+      <Services/>
     </main>
   )
 }

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { RiShoppingBasketLine } from "react-icons/ri";
 const Navber = () => {
   const navContents = [
-    { href: "/shop-all", label: "shop all" },
+    { href: "/shop", label: "shop all" },
     {
       href: "/plants",
       label: "plants",
@@ -25,14 +25,14 @@ const Navber = () => {
     <header className='h-28 flex justify-center items-center border-b max-md:hidden'>
       <nav className=' flex justify-between  items-center container'>
         <div className='flex justify-center items-center gap-10'>
-          <div className='flex flex-col items-center gap-2.5'>
+          <Link href='/' className='flex flex-col items-center gap-2.5'>
             <span className='text-btn_bg font-extrabold text-3xl'>
               LeafyLoom
             </span>
             <small className='tracking-widest text-[0.8rem] text-dark/50'>
               PLANTS
             </small>
-          </div>
+          </Link>
 
           <ul className='lg:flex origin-top justify-center items-center max-lg:bg-white  duration-700  lg:gap-10  '>
             {navContents.slice(0, 3).map((item) => (
@@ -63,7 +63,7 @@ const Navber = () => {
 
 
         <Link href='/cart'>< RiShoppingBasketLine className="text-3xl text-btn_bg absolute top-1/2 transform -translate-y-1/2" /></Link>
-        <span className="absolute w-5 h-5 rounded-full bg-btn_bg -top-6 left-5 text-center text-light font-semibold">15</span>
+        <span className="absolute w-6 h-6 rounded-full bg-btn_bg -top-6 left-5 text-center text-light font-semibold">1</span>
         </div>
         </div>
       </nav>

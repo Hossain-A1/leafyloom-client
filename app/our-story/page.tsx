@@ -7,9 +7,9 @@ export default function OurStoryPage() {
     "https://images.pexels.com/photos/1407305/pexels-photo-1407305.jpeg?auto=compress&cs=tinysrgb&w=600";
 
   return (
-    <main className='sp h-[calc(100vh-7rem)] w-full relative'>
+    <main className='sp relative'>
       <div
-        className='h-full w-full fixed top-28 z-10 left-0 right-0 bottom-auto'
+        className='h-[calc(100vh-7rem)] w-full fixed top-28 z-10 left-0 right-0 bottom-auto'
         style={{
           backgroundImage: `url(${backgroundImageUrl})`,
           backgroundSize: "cover",

@@ -1,20 +1,21 @@
-import Image from "next/image";
 import { PlantType } from "@/types/plants.type";
+import React from "react";
+import CurrencyFormatter from "./shared/CurrencyFormatter";
 import Link from "next/link";
+import Image from "next/image";
 import { RiShoppingBasketLine } from "react-icons/ri";
 import { BiSolidShow } from "react-icons/bi";
-import CurrencyFormatter from "./shared/CurrencyFormatter";
 
-interface ShopProps {
+interface ListViewProps {
   plant: PlantType;
 }
 
-export default function Shop({ plant }: ShopProps) {
+export default function ListView({ plant }: ListViewProps) {
   return (
-    <div className=' shadow-sm rounded-lg  overflow-hidden'>
+    <div className=' shadow-sm rounded-lg flex justify-center items-center  overflow-hidden'>
       <Link
         href={`/shop/${plant._id}`}
-        className='relative block w-full xl:h-[28rem] md:h-[22rem] max-sm:h-48 sm:h-80 group eq '
+        className='relative block w-80 xl:h-80 md:h-64 max-sm:h-48 sm:h-80 group eq '
       >
         <Image
           src={plant.cover[0]}
@@ -47,23 +48,17 @@ export default function Shop({ plant }: ShopProps) {
           </div>
         )}
       </Link>
-      <div className='p-4'>
+      <div className='p-4 w-full'>
         <p className='text-gray-500 text-sm'>{plant.category}</p>
         <h2 className='text-xl text-start font-semibold'>{plant.title}</h2>
         <div className='text-yellow-500 my-2'>
           {"★".repeat(plant.rating) + "☆".repeat(5 - plant.rating)}
         </div>
         <div className='text-lg font-bold'>
-          {plant.isOnSale ? (
-            <>
-              <span className='line-through text-gray-500 mr-2'>
-                ${plant.originalPrice?.toFixed(2)}
-              </span>
-              <span className='text-red-500'>${plant.price.toFixed(2)}</span>
-            </>
-          ) : (
+        
             <span><CurrencyFormatter amount={plant.price}/></span>
-          )}
+            <p>{plant.description.substring(0,200)}...</p>
+          
         </div>
       </div>
     </div>

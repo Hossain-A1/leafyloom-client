@@ -6,8 +6,8 @@ export default function Sort() {
 
   return (
     <section className='flex justify-between gap-10 items-center'>
-         {/* sort options */}
-         <div className='drop'>
+      {/* sort options */}
+      <div className='drop'>
         <form action='#' className='border-2 border-violet-700 rounded '>
           <label htmlFor='sort'></label>
           <select
@@ -48,8 +48,6 @@ export default function Sort() {
           />
         </button>
       </div>
-
-   
     </section>
   );
 }

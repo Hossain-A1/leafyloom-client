@@ -5,6 +5,7 @@ export type PlantType = {
   description: string;
   rating: number;
   price: number;
+  count:number;
   originalPrice?: number; // optional original price for sale items
   category: string;
   isOnSale?: boolean; // optional flag for sale
